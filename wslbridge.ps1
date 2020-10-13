@@ -19,7 +19,7 @@ $ports=@(9090,8080);
 #You can change the addr to your ip config to listen to a specific address
 $addr = '127.0.0.1';
 $laddr1= bash.exe -c "ifconfig eth0 | grep -Po 'inet \K[\d.]+'";
-$laddr2 = ((ipconfig | findstr [IPv4])[-2]).Split()[-1];
+$laddr2 = ((ipconfig | Select-String -Pattern WSL -Context 0,4 | findstr IPv4).Split()[-1]);
 $laddr = @($laddr1, $laddr2);
 $laddr_a = $laddr -join ",";
 $ports_a = $ports -join ",";
