@@ -93,6 +93,8 @@
 
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
+        { "command": "scrollUpPage", "keys": "pgup" },
+        { "command": "scrollDownPage", "keys": "pgdn" },
 
         // Press Alt+Shift+D to open a new pane.
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
