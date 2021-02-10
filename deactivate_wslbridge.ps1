@@ -5,4 +5,7 @@ Get-MrInternetConnectionSharing -InternetInterfaceName "vEthernet (WSL) 2", "WiF
 Start-Sleep -s 1
 Set-VMSwitch WSL -SwitchType Internal
 wsl --shutdown
+Start-Sleep -s 2
+wsl --user root /home/aa-ros/network-config.sh
+Start-Sleep -s 1
 #set-ExecutionPolicy Restricted
