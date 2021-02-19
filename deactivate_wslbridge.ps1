@@ -8,4 +8,5 @@ wsl --shutdown
 Start-Sleep -s 2
 wsl --user root /home/aa-ros/network-config.sh
 Start-Sleep -s 1
+wsl --shutdown
 #set-ExecutionPolicy Restricted
